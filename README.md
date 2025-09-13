@@ -59,7 +59,7 @@ This script automates **common Linux user management tasks**, saving time, reduc
 
 ```bash
 # Backup a directory
-./backup.sh /home/ubuntu/data
+./backup_with_rotation.sh /home/ubuntu/scripts
 
 # Resulting backup folder
 /home/ubuntu/backups/backup_2025-09-13_14-35-07
@@ -85,14 +85,14 @@ Automation ensures **reliable, repeatable backups** in production environments. 
 2. Give execute permissions:
 
 ```bash
-chmod +x usermgmt.sh backup.sh
+chmod +x user_management.sh backup_with_rotation.sh
 ```
 
 3. Run the scripts with required options:
 
 ```bash
-./usermgmt.sh -c        # Create user
-./backup.sh /path/to/data   # Backup directory
+./user_management.sh -c        # Create user
+./backup_with_rotation.sh /path/to/data   # Backup directory
 ```
 
 ---
